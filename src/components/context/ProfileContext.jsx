@@ -8,9 +8,12 @@ export const ProfileProvider = ({ children }) => {
     // Fetch user data from the API
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("http://localhost:7500/kt/me", {
-          withCredentials: true, // Ensure cookies are sent with the request
-        });
+        const response = await axios.get(
+          "https://konnect-back.vercel.app/kt/me",
+          {
+            withCredentials: true, // Ensure cookies are sent with the request
+          }
+        );
         setUser(response.data.user);
       } catch (error) {
         console.error("Error fetching user data:", error);

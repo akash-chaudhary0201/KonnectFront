@@ -14,7 +14,7 @@ const UserProfile = () => {
     const fetchUserData = async () => {
       try {
         const response = await axios.get(
-          "https://konnectback-1.onrender.com/kt/me",
+          "https://konnect-back.vercel.app/kt/me",
           {
             withCredentials: true,
           }

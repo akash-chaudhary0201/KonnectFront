@@ -14,7 +14,7 @@ const LoginPage = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://konnectback-1.onrender.com/kt/login",
+        "https://konnect-back.vercel.app/kt/login",
         {
           email,
           password,

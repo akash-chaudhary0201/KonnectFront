@@ -19,7 +19,7 @@ const CreatePost = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://konnectback-1.onrender.com/kt/teacher/createPost",
+        "https://konnect-back.vercel.app/kt/teacher/createPost",
         { title, content },
         { withCredentials: true }
       );

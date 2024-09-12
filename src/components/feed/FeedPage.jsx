@@ -37,7 +37,7 @@ const FeedPage = () => {
   const handleLogout = async () => {
     try {
       const response = await axios.get(
-        "https://konnectback-1.onrender.com/kt/logout",
+        "https://konnect-back.vercel.app/kt/logout",
         {
           withCredentials: true,
         }
