@@ -10,6 +10,7 @@ const FeedPage = () => {
   const ak = localStorage.getItem("token");
   const role = localStorage.getItem("role");
   console.log(role);
+  console.log(ak);
 
   useEffect(() => {
     if (!ak) {
@@ -19,7 +20,7 @@ const FeedPage = () => {
     const fetchFeed = async () => {
       try {
         const response = await axios.get(
-          "https://konnect-back.vercel.app//kt/feed",
+          "https://konnect-back.vercel.app/kt/feed",
           {
             withCredentials: true,
           }
