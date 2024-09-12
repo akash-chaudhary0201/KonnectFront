@@ -19,7 +19,7 @@ const FeedPage = () => {
     const fetchFeed = async () => {
       try {
         const response = await axios.get(
-          "https://konnectback-1.onrender.com/kt/feed",
+          "https://konnect-back.vercel.app//kt/feed",
           {
             withCredentials: true,
           }
