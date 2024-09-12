@@ -18,9 +18,12 @@ const FeedPage = () => {
     }
     const fetchFeed = async () => {
       try {
-        const response = await axios.get("http://localhost:7500/kt/feed", {
-          withCredentials: true,
-        });
+        const response = await axios.get(
+          "https://konnectback-1.onrender.com/kt/feed",
+          {
+            withCredentials: true,
+          }
+        );
         if (response.data.success) {
           setPosts(response.data.posts);
         }
@@ -33,9 +36,12 @@ const FeedPage = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await axios.get("http://localhost:7500/kt/logout", {
-        withCredentials: true,
-      });
+      const response = await axios.get(
+        "https://konnectback-1.onrender.com/kt/logout",
+        {
+          withCredentials: true,
+        }
+      );
 
       if (response.data.success) {
         localStorage.clear();

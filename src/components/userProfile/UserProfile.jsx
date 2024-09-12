@@ -13,9 +13,12 @@ const UserProfile = () => {
     }
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("http://localhost:7500/kt/me", {
-          withCredentials: true,
-        });
+        const response = await axios.get(
+          "https://konnectback-1.onrender.com/kt/me",
+          {
+            withCredentials: true,
+          }
+        );
         setUser(response.data.user);
       } catch (error) {
         console.error("Error fetching user data:", error);

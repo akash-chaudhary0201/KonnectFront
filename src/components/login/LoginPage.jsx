@@ -14,7 +14,7 @@ const LoginPage = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:7500/kt/login",
+        "https://konnectback-1.onrender.com/kt/login",
         {
           email,
           password,

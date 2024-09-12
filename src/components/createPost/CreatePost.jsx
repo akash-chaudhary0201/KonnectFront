@@ -19,7 +19,7 @@ const CreatePost = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:7500/kt/teacher/createPost",
+        "https://konnectback-1.onrender.com/kt/teacher/createPost",
         { title, content },
         { withCredentials: true }
       );
