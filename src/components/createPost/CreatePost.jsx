@@ -8,6 +8,7 @@ const CreatePost = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
+  console.log("Token on create post page :- ", token);
 
   useEffect(() => {
     if (!token) {
