@@ -32,7 +32,7 @@ const CreatePost = () => {
       }
     } catch (error) {
       console.error("Error creating post:", error);
-      if (error.response && error.response.status === 401) {
+      if (!token) {
         navigate("/");
       }
     }
